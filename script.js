@@ -38,3 +38,10 @@ function mais() {
         n2 = 0
     }
 }
+
+function resultado(){
+    if(maiss = 1) {
+        mais()
+        maiss = 0
+    }
+}
