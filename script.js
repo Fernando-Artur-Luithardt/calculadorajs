@@ -34,7 +34,6 @@ function render(n) {
 }
 
 function mais() {
-    //console.log(n3 + 'n3')
     maiss = 1
     const tela = document.querySelector("#tela")
     if (n1 == 0) {
@@ -56,7 +55,6 @@ function mais() {
 }
 
 function menos() {
-    //console.log(n3 + 'n3')
     menoss = 1
     const tela = document.querySelector("#tela")
     if (n1 == 0) {
@@ -78,7 +76,6 @@ function menos() {
 }
 
 function divisao() {
-    //console.log(n3 + 'n3')
     divi = 1
     const tela = document.querySelector("#tela")
     if (n1 == 0) {
@@ -100,7 +97,6 @@ function divisao() {
 }
 
 function multiplicacao() {
-    //console.log(n3 + 'n3')
     multi = 1
     const tela = document.querySelector("#tela")
     if (n1 == 0) {
