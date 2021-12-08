@@ -1,7 +1,7 @@
 let n = 0
 let n1 = 0
 let n2 = 0
-let n3 = 0
+let n3 = ""
 let telaNum = 0
 let chamou = 0
 
@@ -31,20 +31,10 @@ function render(n) {
 }
 
 function mais() {
-    console.log(n1 + 'n1')
-    console.log(n2 + 'n2')
+    console.log(n3 + 'n3')
     maiss = 1
     const tela = document.querySelector("#tela")
-    if (n3 != 0) {
-        n1 = tela.innerHTML
-        n1 = parseFloat(n1)
-        n3 = parseFloat(n3)
-        n3 = n3 + n1
-        tela.innerHTML = ""
-        render(n3)
-        n1 = 0
-        n3 = 0
-    } else if (n1 == 0) {
+    if (n1 == 0) {
         n1 = tela.innerHTML
         telaNum = 0   
     } else if(n1 != 0 && n2 == 0){
@@ -52,17 +42,18 @@ function mais() {
         n1 = parseFloat(n1)
         n2 = parseFloat(n2)
         n3 = n1 + n2
-        telaNum = n1
+        telaNum = n3
         tela.innerHTML = ""
         render(n3)
         n1 = 0
         n2 = 0
         chamou = 1
+        maiss = 0
     }
 }
 
 function resultado(){
-    if(maiss = 1) {
+    if(maiss == 1) {
         mais()
         maiss = 0
     }
