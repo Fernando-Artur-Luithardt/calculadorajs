@@ -29,7 +29,7 @@ function render(n) {
         telaNum = parseFloat(tela.innerHTML)
     }else(
         tela.innerHTML = n,
-        telaNum = parseFloat(tela.innerHTML)    
+        telaNum = parseFloat(tela.innerHTML)
         )
 }
 
@@ -45,6 +45,7 @@ function mais() {
         n1 = parseFloat(n1)
         n2 = parseFloat(n2)
         n3 = n1 + n2
+        n3 = n3.toFixed(2)
         telaNum = n3
         tela.innerHTML = ""
         render(n3)
@@ -67,6 +68,7 @@ function menos() {
         n1 = parseFloat(n1)
         n2 = parseFloat(n2)
         n3 = n1 - n2
+        n3 = n3.toFixed(2)
         telaNum = n3
         tela.innerHTML = ""
         render(n3)
@@ -89,6 +91,7 @@ function divisao() {
         n1 = parseFloat(n1)
         n2 = parseFloat(n2)
         n3 = n1 / n2
+        n3 = n3.toFixed(2)
         telaNum = n3
         tela.innerHTML = ""
         render(n3)
@@ -111,6 +114,7 @@ function multiplicacao() {
         n1 = parseFloat(n1)
         n2 = parseFloat(n2)
         n3 = n1 * n2
+        n3 = n3.toFixed(2)
         telaNum = n3
         tela.innerHTML = ""
         render(n3)
