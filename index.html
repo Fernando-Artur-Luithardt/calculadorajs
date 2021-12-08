@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
 </head>
 <body>
@@ -20,27 +20,27 @@
                 <td onclick="multiplicacao()">*</td>
             </tr>
             <tr>
-                <td id="7" onclick="mandovalor(7)">7</td>
-                <td id="8" onclick="mandovalor(8)">8</td>
-                <td id="9" onclick="mandovalor(9)">9</td>
+                <td id="7" onclick="render(7)">7</td>
+                <td id="8" onclick="render(8)">8</td>
+                <td id="9" onclick="render(9)">9</td>
                 <td onclick="menos()">-</td>
             </tr>
             <tr>
-                <td id="4" onclick="mandovalor(4)">4</td>
-                <td id="5" onclick="mandovalor(5)">5</td>
-                <td id="6" onclick="mandovalor(6)">6</td>
+                <td id="4" onclick="render(4)">4</td>
+                <td id="5" onclick="render(5)">5</td>
+                <td id="6" onclick="render(6)">6</td>
                 <td onclick="mais()">+</td>
             </tr>
             <tr>
-                <td id="1" onclick="mandovalor(1)">1</td>
-                <td id="2" onclick="mandovalor(2)">2</td>
-                <td id="3" onclick="mandovalor(3)">3</td>
+                <td id="1" onclick="render(1)">1</td>
+                <td id="2" onclick="render(2)">2</td>
+                <td id="3" onclick="render(3)">3</td>
                 <td onclick="resultado()">=</td>
             </tr>
             <tr>
-                <td id="0" onclick="mandovalor(0)">0</td>
-                <td id="," onclick="mandovalor(',')">,</td>
-                <td id="=" onclick="mandovalor(3)"></td>
+                <td id="0" onclick="render(0)">0</td>
+                <td id="," onclick="render(',')">,</td>
+                <td id="=" onclick="render(3)"></td>
                 <td onclick="resultado()">=</td>
             </tr>
         </div>
