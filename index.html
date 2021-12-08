@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div>
+        <h1 id="tela"> </h1>
+    <table>
+            <tr>
+                <td></td>
+                <td>C</td>
+                <td onclick="divisao()">/</td>
+                <td onclick="multiplicacao()">*</td>
+            </tr>
+            <tr>
+                <td id="7" onclick="mandovalor(7)">7</td>
+                <td id="8" onclick="mandovalor(8)">8</td>
+                <td id="9" onclick="mandovalor(9)">9</td>
+                <td onclick="menos()">-</td>
+            </tr>
+            <tr>
+                <td id="4" onclick="mandovalor(4)">4</td>
+                <td id="5" onclick="mandovalor(5)">5</td>
+                <td id="6" onclick="mandovalor(6)">6</td>
+                <td onclick="mais()">+</td>
+            </tr>
+            <tr>
+                <td id="1" onclick="mandovalor(1)">1</td>
+                <td id="2" onclick="mandovalor(2)">2</td>
+                <td id="3" onclick="mandovalor(3)">3</td>
+                <td onclick="resultado()">=</td>
+            </tr>
+            <tr>
+                <td id="0" onclick="mandovalor(0)">0</td>
+                <td id="," onclick="mandovalor(',')">,</td>
+                <td id="=" onclick="mandovalor(3)"></td>
+                <td onclick="resultado()">=</td>
+            </tr>
+        </div>
+    </table>
+    
+</body>
+</html>
