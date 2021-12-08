@@ -2,13 +2,32 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+td {
+    background-color: rgb(167, 152, 149);
+    border-radius: 100%;
+    padding: 15px;
+    cursor: pointer;
 }
 
+h1{
+    font-size:50px;
+}
 body {
     height: 100vh;
     display: grid;
     place-items: center;
+    background-color: rgb(211, 209, 209);
 }
-td {
-    padding: 15px;
+#container {
+    background-color: rgb(32, 37, 37);
+    padding: 10px;
+}
+#tela {
+    background-color: rgb(163, 187, 55);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
