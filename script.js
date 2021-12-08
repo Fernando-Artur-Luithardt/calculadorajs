@@ -5,12 +5,12 @@ render(0)
 
 function render(n) {
 
+    const tela = document.querySelector("#tela")
 
     if (n1 != 0) {
         tela.innerHTML = ""
     }
 
-    const tela = document.querySelector("#tela")
     if (tela.innerHTML != 0) {
         let hist = tela.innerHTML
         tela.innerHTML = hist + n
@@ -19,8 +19,7 @@ function render(n) {
 
 function mais() {
     const tela = document.querySelector("#tela")
-    console.log("mais")
-    if(n1 = 0) {
+    if(n1 == 0) {
         n1 = tela.innerHTML
     } else if(n1 != 0){
         n2 = tela.innerHTML
