@@ -10,6 +10,7 @@ let chamou = 0
 let maiss = 0
 let menoss = 0
 let divi = 0
+let multi = 0
 
 render(telaNum)
 
@@ -98,6 +99,28 @@ function divisao() {
     }
 }
 
+function multiplicacao() {
+    //console.log(n3 + 'n3')
+    multi = 1
+    const tela = document.querySelector("#tela")
+    if (n1 == 0) {
+        n1 = tela.innerHTML
+        telaNum = 0   
+    } else if(n1 != 0 && n2 == 0){
+        n2 = tela.innerHTML
+        n1 = parseFloat(n1)
+        n2 = parseFloat(n2)
+        n3 = n1 * n2
+        telaNum = n3
+        tela.innerHTML = ""
+        render(n3)
+        n1 = 0
+        n2 = 0
+        chamou = 1
+        multi = 0
+    }
+}
+
 function limpa() {
     n1 = 0
     n2 = 0
@@ -116,5 +139,8 @@ function resultado(){
     }else if (divi == 1) {
         divisao()
         divi = 0
+    }else if (multi == 1) {
+        multiplicacao()
+        multi = 0
     }
 }
